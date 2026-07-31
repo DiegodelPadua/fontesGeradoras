@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Site educacional e interativo sobre fontes geradoras de energia elétrica."
+    >
+
+    <title>Fontes Geradoras | Professor Diego de Pádua</title>
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==================================================
+         CABEÇALHO E MENU
+    =================================================== -->
+    <header class="cabecalho">
+
+        <a href="#inicio" class="logo">
+            Prof: <span>Diego de Pádua</span>
+        </a>
+
+        <button
+            type="button"
+            class="botao-menu"
+            id="botao-menu"
+            aria-label="Abrir menu"
+        >
+            ☰
+        </button>
+
+        <nav class="menu" id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#conceito">Conceito</a>
+            <a href="#fontes">Fontes</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#usinas">Usinas</a>
+            <a href="#missao">Missão</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#desafio">Desafio</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ==================================================
+             SEÇÃO INICIAL
+        =================================================== -->
+        <section class="inicio" id="inicio">
+
+            <div class="inicio-conteudo">
+
+                <p class="etiqueta">
+                    Fundamentos da Eletricidade
+                </p>
+
+                <h1>
+                    Entendendo as
+                    <span>fontes geradoras</span>
+                </h1>
+
+                <p class="inicio-descricao">
+                    Descubra como diferentes formas de energia podem produzir
+                    tensão elétrica e alimentar circuitos eletroeletrônicos.
+                </p>
+
+                <a href="#conceito" class="botao-principal">
+                    Divirta-se aprendendo!
+                </a>
+
+            </div>
+
+            <!-- Ilustração criada com HTML e CSS -->
+            <div class="ilustracao">
+
+                <div class="nuvem nuvem-1"></div>
+                <div class="nuvem nuvem-2"></div>
+
+                <div class="gerador-hero">
+
+                    <div class="gerador-tela">
+                        <span id="valor-hero">12</span>
+                        <small id="unidade-hero">VCC</small>
+                    </div>
+
+                    <div class="rotor-hero" id="rotor-hero">
+                        <span>⚙️</span>
+                    </div>
+
+                    <div class="terminais-hero">
+                        <span>+</span>
+                        <span>−</span>
+                    </div>
+
+                </div>
+
+                <div class="icone-energia" id="icone-hero">
+                    🔋
+                </div>
+
+                <div class="selo-hero" id="selo-hero">
+                    Energia química → elétrica
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             CONCEITO
+        =================================================== -->
+        <section class="secao" id="conceito">
+
+            <div class="titulo-secao">
+                <p>Conceito fundamental</p>
+                <h2>O que é uma fonte geradora?</h2>
+                <span>
+                    É o dispositivo ou sistema que fornece tensão elétrica
+                    para permitir o movimento das cargas em um circuito.
+                </span>
+            </div>
+
+            <div class="conceito-grid">
+
+                <article class="card-argila">
+                    <div class="icone-card">⚡</div>
+                    <h3>Produção de tensão</h3>
+                    <p>
+                        A fonte cria um desequilíbrio elétrico entre seus terminais,
+                        estabelecendo uma diferença de potencial.
+                    </p>
+                </article>
+
+                <article class="card-argila">
+                    <div class="icone-card">🔄</div>
+                    <h3>Transformação de energia</h3>
+                    <p>
+                        A energia elétrica é obtida pela transformação de energia
+                        química, térmica, luminosa, mecânica ou magnética.
+                    </p>
+                </article>
+
+                <article class="card-argila">
+                    <div class="icone-card">🔌</div>
+                    <h3>Alimentação do circuito</h3>
+                    <p>
+                        Quando o circuito é fechado, a tensão fornecida pela fonte
+                        pode impulsionar as cargas elétricas.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="analogia">
+
+                <div class="analogia-icone">
+                    🚰
+                </div>
+
+                <div>
+                    <h3>A fonte comparada a uma bomba de água</h3>
+                    <p>
+                        Assim como uma bomba cria pressão para movimentar a água,
+                        uma fonte geradora cria diferença de potencial para
+                        impulsionar as cargas elétricas.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="cadeia-energia">
+                <div>Energia de entrada</div>
+                <span>→</span>
+                <div>Fonte geradora</div>
+                <span>→</span>
+                <div>Tensão elétrica</div>
+                <span>→</span>
+                <div>Circuito funcionando</div>
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             FORMAS DE GERAÇÃO
+        =================================================== -->
+        <section class="secao" id="fontes">
+
+            <div class="titulo-secao">
+                <p>Formas de transformação</p>
+                <h2>Como a tensão elétrica pode ser gerada?</h2>
+                <span>
+                    Conheça cinco formas importantes de geração apresentadas no conteúdo.
+                </span>
+            </div>
+
+            <div class="fontes-grid">
+
+                <article class="fonte-card">
+                    <div class="fonte-icone">🔋</div>
+                    <small>Ação química</small>
+                    <h3>Pilha e bateria</h3>
+                    <p>
+                        Reações químicas criam uma diferença de potencial
+                        entre os terminais.
+                    </p>
+                    <strong>Saída comum: CC</strong>
+                </article>
+
+                <article class="fonte-card">
+                    <div class="fonte-icone">🌡️</div>
+                    <small>Ação térmica</small>
+                    <h3>Termopar</h3>
+                    <p>
+                        A junção de dois metais diferentes produz uma tensão
+                        quando é aquecida.
+                    </p>
+                    <strong>Aplicação: sensor de temperatura</strong>
+                </article>
+
+                <article class="fonte-card">
+                    <div class="fonte-icone">☀️</div>
+                    <small>Ação da luz</small>
+                    <h3>Célula fotovoltaica</h3>
+                    <p>
+                        A energia dos fótons provoca o movimento de cargas
+                        nas camadas semicondutoras.
+                    </p>
+                    <strong>Aplicação: painel solar</strong>
+                </article>
+
+                <article class="fonte-card">
+                    <div class="fonte-icone">🔨</div>
+                    <small>Ação mecânica</small>
+                    <h3>Cristal piezoelétrico</h3>
+                    <p>
+                        A compressão ou torção de certos cristais produz
+                        uma diferença de potencial.
+                    </p>
+                    <strong>Aplicação: acendedor elétrico</strong>
+                </article>
+
+                <article class="fonte-card">
+                    <div class="fonte-icone">🧲</div>
+                    <small>Ação magnética</small>
+                    <h3>Dínamo e alternador</h3>
+                    <p>
+                        Um condutor ou bobina, ao cortar um campo magnético,
+                        pode produzir tensão elétrica.
+                    </p>
+                    <strong>Aplicação: geradores</strong>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             SIMULADOR DE FONTES
+        =================================================== -->
+        <section class="secao" id="simulador">
+
+            <div class="titulo-secao">
+                <p>Experiência interativa</p>
+                <h2>Simulador de fontes geradoras</h2>
+                <span>
+                    Selecione uma fonte e observe a transformação de energia.
+                </span>
+            </div>
+
+            <div class="simulador-grid">
+
+                <!-- Painel de seleção -->
+                <div class="painel-fontes">
+
+                    <h3>Escolha uma fonte</h3>
+
+                    <button
+                        type="button"
+                        class="botao-fonte ativo"
+                        data-fonte="quimica"
+                    >
+                        🔋 Pilha
+                    </button>
+
+                    <button
+                        type="button"
+                        class="botao-fonte"
+                        data-fonte="termica"
+                    >
+                        🌡️ Termopar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="botao-fonte"
+                        data-fonte="luz"
+                    >
+                        ☀️ Célula solar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="botao-fonte"
+                        data-fonte="mecanica"
+                    >
+                        🔨 Piezoelétrico
+                    </button>
+
+                    <button
+                        type="button"
+                        class="botao-fonte"
+                        data-fonte="magnetica"
+                    >
+                        🧲 Gerador magnético
+                    </button>
+
+                </div>
+
+                <!-- Área visual da simulação -->
+                <div class="bancada-simulador">
+
+                    <div class="medidor-simulador">
+
+                        <small>TENSÃO GERADA</small>
+
+                        <div class="display-simulador">
+                            <span id="display-tensao">1.50</span>
+                            <strong id="display-unidade">VCC</strong>
+                        </div>
+
+                        <div class="barra-geracao">
+                            <span id="barra-geracao"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="fonte-visual" id="fonte-visual">
+
+                        <div class="entrada-energia" id="entrada-energia">
+                            🧪
+                        </div>
+
+                        <div class="seta-transformacao">
+                            →
+                        </div>
+
+                        <div class="maquina-geradora" id="maquina-geradora">
+                            🔋
+                        </div>
+
+                        <div class="seta-transformacao">
+                            →
+                        </div>
+
+                        <div class="saida-eletrica">
+                            ⚡
+                        </div>
+
+                    </div>
+
+                    <div class="lampada-teste" id="lampada-teste">
+                        💡
+                    </div>
+
+                    <div class="dados-simulador">
+
+                        <article>
+                            <small>Energia de entrada</small>
+                            <strong id="tipo-entrada">Química</strong>
+                        </article>
+
+                        <article>
+                            <small>Dispositivo</small>
+                            <strong id="nome-dispositivo">Pilha</strong>
+                        </article>
+
+                        <article>
+                            <small>Tipo de saída</small>
+                            <strong id="tipo-saida">Corrente contínua</strong>
+                        </article>
+
+                    </div>
+
+                    <div class="explicacao-simulador" id="explicacao-simulador">
+                        Reações químicas criam uma diferença de potencial
+                        entre os terminais da pilha.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             INDUÇÃO MAGNÉTICA
+        =================================================== -->
+        <section class="secao">
+
+            <div class="titulo-secao">
+                <p>Princípio de funcionamento</p>
+                <h2>Geração por ação magnética</h2>
+                <span>
+                    Movimente o ímã e observe a tensão induzida na bobina.
+                </span>
+            </div>
+
+            <div class="inducao-container">
+
+                <div class="controles-inducao">
+                    <button type="button" id="mover-ima">
+                        Mover o ímã
+                    </button>
+
+                    <button type="button" id="inverter-ima">
+                        Inverter polos
+                    </button>
+
+                    <button type="button" id="parar-ima">
+                        Parar
+                    </button>
+                </div>
+
+                <div class="demonstracao-inducao">
+
+                    <div class="ima" id="ima">
+                        <span class="polo-norte">N</span>
+                        <span class="polo-sul">S</span>
+                    </div>
+
+                    <div class="bobina">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="medidor-inducao">
+                        <small>Tensão induzida</small>
+                        <strong id="tensao-induzida">0,00 V</strong>
+                    </div>
+
+                </div>
+
+                <div class="explicacao-inducao" id="explicacao-inducao">
+                    Sem movimento relativo entre o ímã e a bobina,
+                    não há variação de fluxo magnético.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             USINAS GERADORAS
+        =================================================== -->
+        <section class="secao" id="usinas">
+
+            <div class="titulo-secao">
+                <p>Geração em larga escala</p>
+                <h2>Principais tipos de usinas</h2>
+                <span>
+                    As usinas transformam diferentes formas de energia em eletricidade.
+                </span>
+            </div>
+
+            <div class="usinas-grid">
+
+                <article class="usina-card">
+                    <div class="usina-icone">💧</div>
+                    <h3>Hidrelétrica</h3>
+                    <p>
+                        A água movimenta a turbina, que aciona o gerador.
+                    </p>
+                    <div class="cadeia-usina">
+                        Água → turbina → gerador
+                    </div>
+                </article>
+
+                <article class="usina-card">
+                    <div class="usina-icone">🔥</div>
+                    <h3>Termelétrica</h3>
+                    <p>
+                        O calor produz vapor, que gira a turbina ligada ao gerador.
+                    </p>
+                    <div class="cadeia-usina">
+                        Calor → vapor → turbina
+                    </div>
+                </article>
+
+                <article class="usina-card">
+                    <div class="usina-icone">☢️</div>
+                    <h3>Nuclear</h3>
+                    <p>
+                        A energia nuclear é convertida em calor e depois em movimento.
+                    </p>
+                    <div class="cadeia-usina">
+                        Fissão → calor → turbina
+                    </div>
+                </article>
+
+                <article class="usina-card">
+                    <div class="usina-icone">🌬️</div>
+                    <h3>Eólica</h3>
+                    <p>
+                        O vento gira as pás do aerogerador, movimentando o gerador.
+                    </p>
+                    <div class="cadeia-usina">
+                        Vento → rotor → gerador
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             MISSÃO INTERATIVA
+        =================================================== -->
+        <section class="secao" id="missao">
+
+            <div class="titulo-secao">
+                <p>Laboratório virtual</p>
+                <h2>Missão: identifique a fonte correta</h2>
+                <span>
+                    Escolha o dispositivo adequado para cada transformação de energia.
+                </span>
+            </div>
+
+            <div class="missao-container">
+
+                <aside class="painel-missao">
+
+                    <div class="cabecalho-missao">
+                        <span>01</span>
+
+                        <div>
+                            <small>Missão prática</small>
+                            <h3>Fonte para sensor térmico</h3>
+                        </div>
+                    </div>
+
+                    <p>
+                        Uma indústria precisa detectar temperatura usando uma tensão
+                        produzida pela junção de dois metais diferentes.
+                    </p>
+
+                    <div class="objetivos-missao">
+
+                        <div id="obj-energia">
+                            <span>○</span>
+                            Identificar a ação térmica
+                        </div>
+
+                        <div id="obj-dispositivo">
+                            <span>○</span>
+                            Escolher o termopar
+                        </div>
+
+                        <div id="obj-aplicacao">
+                            <span>○</span>
+                            Relacionar ao sensor de temperatura
+                        </div>
+
+                    </div>
+
+                    <div class="recompensa">
+                        ⭐ +100 XP
+                    </div>
+
+                </aside>
+
+                <div class="bancada-missao">
+
+                    <label for="energia-missao">
+                        Tipo de energia de entrada
+                        <select id="energia-missao">
+                            <option value="">Selecione</option>
+                            <option value="quimica">Química</option>
+                            <option value="termica">Térmica</option>
+                            <option value="luminosa">Luminosa</option>
+                            <option value="mecanica">Mecânica</option>
+                            <option value="magnetica">Magnética</option>
+                        </select>
+                    </label>
+
+                    <label for="dispositivo-missao">
+                        Dispositivo gerador
+                        <select id="dispositivo-missao">
+                            <option value="">Selecione</option>
+                            <option value="pilha">Pilha</option>
+                            <option value="termopar">Termopar</option>
+                            <option value="fotovoltaica">Célula fotovoltaica</option>
+                            <option value="piezo">Cristal piezoelétrico</option>
+                            <option value="alternador">Alternador</option>
+                        </select>
+                    </label>
+
+                    <label for="aplicacao-missao">
+                        Aplicação
+                        <select id="aplicacao-missao">
+                            <option value="">Selecione</option>
+                            <option value="temperatura">Sensor de temperatura</option>
+                            <option value="iluminacao">Iluminação solar</option>
+                            <option value="acendedor">Acendedor elétrico</option>
+                            <option value="automovel">Sistema automotivo</option>
+                        </select>
+                    </label>
+
+                    <button
+                        type="button"
+                        class="botao-missao"
+                        id="verificar-missao"
+                    >
+                        Verificar missão
+                    </button>
+
+                    <button
+                        type="button"
+                        class="botao-reiniciar"
+                        id="reiniciar-missao"
+                    >
+                        Reiniciar
+                    </button>
+
+                    <div class="feedback-missao" id="feedback-missao">
+                        Analise a descrição antes de escolher as opções.
+                    </div>
+
+                    <div
+                        class="missao-concluida"
+                        id="missao-concluida"
+                        hidden
+                    >
+                        🏆
+                        <strong>
+                            Missão concluída! O termopar gera tensão por ação térmica.
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             CURIOSIDADES
+        =================================================== -->
+        <section class="secao" id="curiosidades">
+
+            <div class="titulo-secao">
+                <p>Descubra mais</p>
+                <h2>Você sabia?</h2>
+                <span>
+                    Curiosidades sobre geração de energia elétrica.
+                </span>
+            </div>
+
+            <div class="curiosidade-container">
+
+                <button
+                    type="button"
+                    class="controle-curiosidade"
+                    id="curiosidade-anterior"
+                    aria-label="Curiosidade anterior"
+                >
+                    ‹
+                </button>
+
+                <article class="card-curiosidade">
+
+                    <div id="icone-curiosidade">
+                        🌡️
+                    </div>
+
+                    <div>
+
+                        <span id="numero-curiosidade">
+                            Curiosidade 1 de 8
+                        </span>
+
+                        <h3 id="titulo-curiosidade">
+                            O termopar também é um sensor
+                        </h3>
+
+                        <p id="texto-curiosidade"></p>
+
+                        <div id="destaque-curiosidade"></div>
+
+                    </div>
+
+                </article>
+
+                <button
+                    type="button"
+                    class="controle-curiosidade"
+                    id="proxima-curiosidade"
+                    aria-label="Próxima curiosidade"
+                >
+                    ›
+                </button>
+
+            </div>
+
+            <div
+                class="indicadores-curiosidade"
+                id="indicadores-curiosidade"
+            ></div>
+
+        </section>
+
+        <!-- ==================================================
+             DESAFIO FINAL
+        =================================================== -->
+        <section class="secao" id="desafio">
+
+            <div class="desafio-caixa">
+
+                <div>
+
+                    <p class="etiqueta">
+                        Teste seus conhecimentos
+                    </p>
+
+                    <h2>Desafio final</h2>
+
+                    <p id="pergunta"></p>
+
+                    <div class="alternativas"></div>
+
+                    <div id="resposta-desafio"></div>
+
+                </div>
+
+                <div class="trofeu">
+                    🏆
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+    <footer>
+
+        <p>
+            Material educacional sobre fontes geradoras de energia elétrica.
+        </p>
+
+        <p>
+            <strong>Professor Diego de Pádua</strong> • 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>
